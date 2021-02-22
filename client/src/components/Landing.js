@@ -16,18 +16,26 @@ const Landing = () => {
         <h1>Oak Leaf Store</h1>
         <h4>Home is where my plants are</h4>
       </div>
-      <Carousel autoPlay={true}>
+      <Carousel autoPlay={true} showThumbs={false}>
         <div>
           <Image src={carouselImage1}></Image>
-          <p className="legend">Legend 1</p>
+          <p className="legend legend-item">
+            "Gardening adds years to your life and life to your years."
+          </p>
         </div>
         <div>
           <Image src={carouselImage2}></Image>
-          <p className="legend">Legend 2</p>
+          <p className="legend legend-item">
+            "If you’ve never experienced the joy of accomplishing more than you
+            can imagine, plant a garden."
+          </p>
         </div>
         <div>
           <Image src={carouselImage3}></Image>
-          <p className="legend">Legend 3</p>
+          <p className="legend legend-item">
+            "I hope that while so many people are out smelling the flowers,
+            someone is taking the time to plant some."
+          </p>
         </div>
       </Carousel>
     </div>
