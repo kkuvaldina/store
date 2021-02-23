@@ -33,6 +33,15 @@ body {
 
 .header-1 {
   padding: 20px 50px !important;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
 }
 
 .header-2 {
@@ -46,12 +55,40 @@ body {
   color: #7c9473 !important;
 }
 
+.cart-link {
+  width: 45px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.input-search {
+  position: relative;
+  margin-right: 20px;
+}
+
+.input-search span {
+  position: absolute;
+  font-size: 30px;
+  right: 3px;
+  top: 6px;
+}
+
+.input-search span:hover {
+  cursor: pointer;
+}
+
 .body-text,
 .body-text a {
   font-weight: 400 !important;
   font-size: 16px !important;
   font-family: "Montserrat", sans-serif !important;
   color: #7c9473 !important;
+}
+
+.body-text a span {
+  font-size: 22px !important;
 }
 
 .landing {

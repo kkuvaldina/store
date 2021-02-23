@@ -9,6 +9,16 @@ class Header extends Component {
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
+  handleSubmit = () => {
+    return "";
+  };
+
+  onKeyPress = (e) => {
+    if (e.key === "Enter") {
+      this.handleSubmit();
+    }
+  };
+
   renderContent() {
     switch (this.props.auth) {
       case null:
@@ -54,22 +64,33 @@ class Header extends Component {
     return (
       <>
         <Menu text className="header-1">
-          <Link to="/">
-            <img style={{ maxWidth: "80px" }} src={leafImage} />
-          </Link>
-          <Menu.Item
-            name="Oak Leaf Store"
-            style={{ fontWeight: "800" }}
-            href="/"
-            //active={this.state.activeItem === "Oak Leaf Store"}
-            onClick={this.handleItemClick}
-            key="1"
-          />
+          <div className="logo">
+            <Link to="/">
+              <img style={{ maxWidth: "80px" }} src={leafImage} />
+            </Link>
+            <Menu.Item
+              name="Oak Leaf Store"
+              style={{ fontWeight: "800" }}
+              href="/"
+              //active={this.state.activeItem === "Oak Leaf Store"}
+              onClick={this.handleItemClick}
+              key="1"
+            />
+          </div>
 
-          <Menu.Menu position="right">
+          <Menu.Menu>
             <Menu.Item>
-              <Input icon="search" placeholder="Search..." />
+              {/* <Input icon="search" placeholder="Search..." /> */}
+              {/* <input type="text" placeholder="Search.." name="search" />
+              <button type="submit">&#x1F50D;</button> */}
+              <Input className="input-search" icon placeholder="Search...">
+                <input />
+                <span onClick={this.handleSubmit}>&#x1F50D;</span>
+              </Input>
             </Menu.Item>
+            <Link to="/cart" className="cart-link">
+              &#x1F6D2;
+            </Link>
             {this.renderContent()}
           </Menu.Menu>
         </Menu>

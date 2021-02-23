@@ -16,7 +16,7 @@ const Landing = () => {
         <h1>Oak Leaf Store</h1>
         <h4>Home is where my plants are</h4>
       </div>
-      <Carousel autoPlay={true} showThumbs={false}>
+      <Carousel autoPlay={true} showThumbs={false} dinamicHeight={true}>
         <div>
           <Image src={carouselImage1}></Image>
           <p className="legend legend-item">

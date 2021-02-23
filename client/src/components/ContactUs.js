@@ -14,14 +14,19 @@ const ContactUs = () => {
           maxWidth: "600px",
           margin: "auto",
           marginBottom: "35px",
+          width: "100%",
         }}
       ></Image>
       {/* <p className="body-text">Our Contacts:</p> */}
       <div className="contacts body-text">
-        <a>&#x1F4CD; Salt Lake City, Utah</a>
-        <a href="tel:385-OAKLEAF">&#x1F4DE; Phone: 385-OAKLEAF</a>
+        <a>
+          <span>&#x1F4CD;</span> Salt Lake City, Utah
+        </a>
+        <a href="tel:385-OAKLEAF">
+          <span>&#x1F4DE;</span> Phone: 385-OAKLEAF
+        </a>
         <a href="mailto: oak-leaf-store@gmail.com">
-          &#x1F4E9; Email: oak-leaf-store@gmail.com
+          <span>&#x1F4E9;</span> Email: oak-leaf-store@gmail.com
         </a>
       </div>
     </div>

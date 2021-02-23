@@ -10,7 +10,12 @@ const AboutUs = () => {
       </Header>
       <Image
         src={aboutUsImage}
-        style={{ maxWidth: "600px", margin: "auto", marginBottom: "35px" }}
+        style={{
+          maxWidth: "600px",
+          margin: "auto",
+          marginBottom: "35px",
+          width: "100%",
+        }}
       ></Image>
       <p className="body-text">
         We are the plants company based in Utah. We work with a small group of

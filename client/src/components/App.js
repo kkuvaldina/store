@@ -12,6 +12,7 @@ import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Account from "./Account";
+import Cart from "./Cart";
 
 class App extends Component {
   componentDidMount() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route exact path="/about-us" component={AboutUs}></Route>
             <Route exact path="/contact" component={ContactUs}></Route>
             <Route exact path="/account" component={Account}></Route>
+            <Route exact path="/cart" component={Cart}></Route>
             <Footer></Footer>
           </>
         </BrowserRouter>
